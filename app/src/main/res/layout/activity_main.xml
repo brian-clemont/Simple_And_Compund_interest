@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.coutinho.brian.simpleandcompundinterest.MainActivity">
+
+    <EditText
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/input_principal_amount"
+    android:hint="@string/enter_principle_amount"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_no_of_times"
+        android:hint="@string/enter_times_interest_compounded_per_year"
+        android:layout_below="@+id/input_principal_amount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_rate"
+        android:hint="@string/enter_rate"
+        android:layout_below="@+id/input_no_of_times"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_no_of_years"
+        android:hint="@string/enter_no_of_years"
+        android:layout_below="@+id/input_rate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_simpleInterest"
+        android:text="@string/simple_interest"
+        android:layout_below="@+id/input_no_of_years"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_compoundInterest"
+        android:text="@string/compound_interest"
+        android:layout_below="@+id/button_simpleInterest"
+        android:layout_alignLeft="@+id/button_simpleInterest"
+        android:layout_alignStart="@+id/button_simpleInterest"
+        android:layout_marginTop="24dp" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:id="@+id/output_Result"
+        android:textSize="20sp"
+        android:layout_below="@+id/button_compoundInterest"
+        android:layout_alignLeft="@+id/button_compoundInterest"
+        android:layout_alignStart="@+id/button_compoundInterest"
+        android:layout_marginTop="61dp" />
+
+</RelativeLayout>

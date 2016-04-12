@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simple And Compund interest</string>
+    <string name="enter_principle_amount">Enter Principle Amount</string>
+    <string name="enter_times_interest_compounded_per_year">Enter Times Interest compounded Per year</string>
+    <string name="enter_rate">Enter Rate</string>
+    <string name="enter_no_of_years">Enter No of Years</string>
+    <string name="simple_interest">Simple Interest</string>
+    <string name="compound_interest">Compound Interest</string>
+    <string name="result">Result</string>
+    <string name="simple_interest_is">"The Simple Interest is "</string>
+</resources>
